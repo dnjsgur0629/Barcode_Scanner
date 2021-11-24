@@ -28,7 +28,7 @@
             android:layout_weight="1"
             android:layout_margin="10dp"
             android:text="인식성공"
-            android:id="@+id/SuccessScan"
+            android:id="@+id/btnSuccess"
             />
         <Button
             android:layout_width="0dp"
@@ -36,13 +36,13 @@
             android:layout_weight="1"
             android:layout_margin="10dp"
             android:text="인식실패"
-            android:id="@+id/failScan"
+            android:id="@+id/btnFail"
             />
     </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="(개발자를 위한 버튼)"
+        android:text="(테스트를 위한 버튼)"
         />
 
 

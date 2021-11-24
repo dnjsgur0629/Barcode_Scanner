@@ -3,19 +3,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
-    <TextView
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:text="상품정보가 출력됨"
+            android:textSize="40sp"
+            />
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="20dp"
-        android:text="상품정보가 출력됨"
-        android:textSize="40sp"
-        />
+        android:layout_alignTop="@+id/layoutBtn"
+        android:layout_marginTop="-79dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="가격"
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
+        android:id="@+id/layoutBtn"
         >
         <Button
             android:layout_width="0dp"
@@ -23,7 +42,7 @@
             android:layout_weight="1"
             android:layout_margin="10dp"
             android:text="다른 상품임"
-            android:id="@+id/btnWronggoods"
+            android:id="@+id/btnWrong"
             />
         <Button
             android:layout_width="0dp"
@@ -31,7 +50,7 @@
             android:layout_weight="1"
             android:layout_margin="10dp"
             android:text="구매 사이트"
-            android:id="@+id/btnPurchse"
+            android:id="@+id/btnPurchase"
             />
         <Button
             android:layout_width="0dp"
@@ -42,7 +61,4 @@
             android:id="@+id/btnNo"
             />
     </LinearLayout>
-
-
-
 </RelativeLayout>
